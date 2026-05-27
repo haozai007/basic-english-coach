@@ -1,0 +1,4 @@
+interface:
+  display_name: "Basic English Coach"
+  short_description: "Learn, practice, and translate with Ogden-style Basic English."
+  default_prompt: "Help me learn English using C.K. Ogden Basic English: vocabulary, simple sentences, workplace phrases, and Chinese-to-simple-English translation."
