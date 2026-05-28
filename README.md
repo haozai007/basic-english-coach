@@ -16,7 +16,7 @@ This skill is designed for Chinese-speaking learners who want practical English 
 Clone this repository directly into your Codex skills directory:
 
 ```bash
-git clone https://github.com/alicecen/basic-english-coach.git ~/.codex/skills/basic-english-coach
+git clone https://github.com/haozai007/basic-english-coach.git ~/.codex/skills/basic-english-coach
 ```
 
 Restart Codex if the skill does not appear immediately.
