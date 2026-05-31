@@ -38,6 +38,19 @@ If the user gives no level, assume a Chinese-speaking adult beginner to lower-in
 4. Include a short active practice section unless the user only asks for a direct translation.
 5. Keep Chinese explanations concise and practical.
 
+## Failure Handling
+
+If any step fails, follow this table before giving up:
+
+| 触发条件 | 一线修复 | 仍失败兜底 |
+|---------|---------|-----------|
+| Reference file not found or unreadable | Use built-in knowledge of Basic English principles; note to user: "working from memory" | Ask user to confirm their skill installation; provide lesson without claiming reference accuracy |
+| User request outside skill scope (academic writing, TOEFL prep, pronunciation drill) | Offer the closest matching mode (e.g., rewrite for academic, vocabulary for TOEFL) | Politely redirect: "This skill focuses on simple everyday English. I can help with [closest mode] instead." |
+| User does not respond to level checkpoint | Default to Chinese-speaking adult beginner | Continue with beginner-level material; ask again after first exercise |
+| Review log missing or history lost | Create a fresh starter plan with today's date | Ask user to report which words they remember; rebuild log from their report |
+| User answers all quiz questions wrong | Simplify: drop to 3-5 core words, give more examples | Switch to recognition-only mode (match word to meaning) rather than recall |
+| User input is too short or unclear to determine task type | Ask one focused question: "Do you want vocabulary, translation, or workplace phrases?" | Default to vocabulary drill with 5 common words |
+
 ## Output Modes
 
 ### Vocabulary Drill
