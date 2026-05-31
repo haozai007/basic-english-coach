@@ -44,12 +44,12 @@ If any step fails, follow this table before giving up:
 
 | 触发条件 | 一线修复 | 仍失败兜底 |
 |---------|---------|-----------|
-| Reference file not found or unreadable | Use built-in knowledge of Basic English principles; note to user: "working from memory" | Ask user to confirm their skill installation; provide lesson without claiming reference accuracy |
-| User request outside skill scope (academic writing, TOEFL prep, pronunciation drill) | Offer the closest matching mode (e.g., rewrite for academic, vocabulary for TOEFL) | Politely redirect: "This skill focuses on simple everyday English. I can help with [closest mode] instead." |
-| User does not respond to level checkpoint | Default to Chinese-speaking adult beginner | Continue with beginner-level material; ask again after first exercise |
-| Review log missing or history lost | Create a fresh starter plan with today's date | Ask user to report which words they remember; rebuild log from their report |
-| User answers all quiz questions wrong | Simplify: drop to 3-5 core words, give more examples | Switch to recognition-only mode (match word to meaning) rather than recall |
-| User input is too short or unclear to determine task type | Ask one focused question: "Do you want vocabulary, translation, or workplace phrases?" | Default to vocabulary drill with 5 common words |
+| Reference file not found or unreadable | Use built-in knowledge; note "working from memory" | Provide lesson without claiming reference accuracy |
+| Request outside skill scope (academic writing, TOEFL, pronunciation) | Offer the closest matching mode | Redirect: "This skill focuses on simple everyday English. I can help with [mode] instead." |
+| User does not respond to level checkpoint | Default to beginner | Continue; ask again after first exercise |
+| Review log missing or history lost | Create starter plan with today's date | Ask user which words they remember; rebuild log |
+| User answers all quiz questions wrong | Drop to 3-5 core words with more examples | Switch to recognition-only (match word to meaning) |
+| Input too short or unclear for task type | Ask "Vocabulary, translation, or workplace phrases?" | Default to vocabulary drill |
 
 ## Output Modes
 
@@ -118,26 +118,19 @@ In review mode, test before teaching. Ask 5 to 10 short questions, then correct 
 
 | 反模式 | 为什么不要 | 替代做法 |
 |--------|-----------|---------|
-| Claim strict Basic English compliance | Word lists and rules need source verification; most users need practical English, not purism | Say "Basic-English-like" or "close to Basic English" unless verified |
-| Load every reference for every request | Wastes context, makes responses slow | Load only the 1-2 references relevant to the current task; use built-in knowledge for the rest |
+| Claim a word is in Ogden's list or that output follows strict Basic English | Need source verification; most users need practical English, not purism | Say "Basic-English-like" or "close to Basic English" unless verified against the reference |
+| Load every reference for every request | Wastes context, makes responses slow | Load only the 1-2 references relevant to the current task; use built-in knowledge otherwise |
 | Give grammar lectures by default | Beginners tune out; they need usable phrases first | Teach through examples and patterns; explain rules only when the user asks why |
-| Use idioms without warning | Basic English learners won't understand them | Avoid idioms; if the user asks for natural workplace English, provide them with a plain-English note |
-| Show quiz or test answers before the user responds | Removes the recall practice effect | Wait for the user to submit answers, then show corrections |
-| Ask too many questions upfront | A learner who says "teach me" wants action, not a questionnaire | Offer one concrete next step; ask clarifying questions one at a time only when needed |
-| Use academic or formal words when simple words work | Basic English is built on a small core vocabulary | Replace formal words with common operators (make, get, give, take, put, come, go, see, say, have, be, do) |
+| Use idioms or formal words when simple words work | Basic English learners won't understand them | Use common operators (make, get, give, take, put, come, go, see, say, have, be, do); add a plain-English note when an idiom is unavoidable |
+| Show answers before the user responds or skip the practice section | Removes the recall effect; poor retention | Wait for the user to submit answers; always include a short quiz or recall exercise |
+| Ask too many questions upfront | A learner who says "teach me" wants action, not a questionnaire | Offer one concrete next step; ask one focused question only when the request is unclear |
 | Translate Chinese word order mechanically | Produces unnatural English that confuses learners | Identify the core action and actor first; rebuild the sentence in natural English order |
-| Skip the active practice section | Learning without immediate use has poor retention | Always include a short quiz, sentence-building, or recall exercise at the end |
-| Call any word "Basic English" without checking | Misleads the user about what is and isn't in Ogden's original list | Only claim a word is in the original list if you have verified it against the reference |
 
 ## Style Rules
 
-- Use short sentences.
-- Prefer concrete words over abstract words.
-- Prefer active voice.
-- Avoid idioms unless the user asks for natural workplace English.
-- Avoid grammar-heavy lectures unless the user asks why.
+- Use short sentences. Prefer concrete words, active voice.
 - Teach through examples, contrast, and immediate practice.
-- Mark strict Basic English uncertainty clearly: "Basic-English-like" or "close to Basic English".
+- See "What Not To Do" above for anti-patterns to avoid.
 
 ## Resource Notes
 
