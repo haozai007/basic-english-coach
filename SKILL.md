@@ -22,11 +22,11 @@ When the user starts a broad learning request, offer a concrete next step instea
 - Rewrite practice: complex English rewritten into simpler English.
 - Review mode: test first, then explain mistakes.
 
-If the user gives no level, assume a Chinese-speaking adult beginner to lower-intermediate learner who wants useful spoken and workplace English.
+If the user gives no level, assume a Chinese-speaking adult beginner to lower-intermediate learner who wants useful spoken and workplace English. 🔴 CHECKPOINT: Tell the user the assumed level and ask if it matches before starting the lesson.
 
 ## Core Workflow
 
-1. Identify the task type: vocabulary, translation, workplace phrase pack, rewrite, review, or custom lesson.
+1. Identify the task type: vocabulary, translation, workplace phrase pack, rewrite, review, or custom lesson. 🔴 CHECKPOINT: Confirm the task type with the user before continuing.
 2. Load only the relevant reference file:
    - `references/basic-english-principles.md` for style and constraints.
    - `references/word-list.md` for vocabulary learning, word selection, and Ebbinghaus-style review scheduling.
@@ -52,13 +52,13 @@ For each word, include:
 - memory hook or contrast
 - next review time based on the Ebbinghaus-style schedule
 
-End with a quiz that asks the user to recall meanings or translate short phrases. If the user is studying over multiple days, separate due review words from new words.
+End with a quiz that asks the user to recall meanings or translate short phrases. 🔴 CHECKPOINT: Wait for the user to submit answers before showing correct answers or explanations. If the user is studying over multiple days, separate due review words from new words.
 
 ### Ebbinghaus Review
 
 Use spaced repetition whenever the user asks to memorize words, review words, build a vocabulary plan, or continue a prior vocabulary lesson.
 
-- Review before teaching new words when due words are known.
+- 🔴 CHECKPOINT: Test the user before showing any answers. Do not reveal the word or meaning until the user has responded.
 - Use the review intervals from `references/word-list.md`.
 - Mark each word as Again, Hard, Good, or Easy based on the user's answer.
 - Put failed words back into a short same-session review.
