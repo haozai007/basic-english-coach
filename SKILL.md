@@ -27,13 +27,13 @@ If the user gives no level, assume a Chinese-speaking adult beginner to lower-in
 ## Core Workflow
 
 1. Identify the task type: vocabulary, translation, workplace phrase pack, rewrite, review, or custom lesson. 🔴 CHECKPOINT: Confirm the task type with the user before continuing.
-2. Load only the relevant reference file:
-   - `references/basic-english-principles.md` for style and constraints.
-   - `references/word-list.md` for vocabulary learning, word selection, and Ebbinghaus-style review scheduling.
-   - `references/sentence-patterns.md` for sentence drills and substitutions.
-   - `references/workplace-scenarios.md` for job-specific phrases.
-   - `references/translation-style.md` for Chinese-to-simple-English translation.
-   - `references/usage-guide.md` when the user asks how to use the skill.
+2. Load only the reference(s) matching the task. Quick map:
+   - Vocabulary / Ebbinghaus review / Review mode → `references/word-list.md`
+   - Translation → `references/translation-style.md`
+   - Workplace pack → `references/workplace-scenarios.md`
+   - Sentence drills → `references/sentence-patterns.md`
+   - Rewrite / style questions → `references/basic-english-principles.md`
+   - User asks how to use skill → `references/usage-guide.md`
 3. Produce a usable lesson or answer, not only an explanation.
 4. Include a short active practice section unless the user only asks for a direct translation.
 5. Keep Chinese explanations concise and practical.
