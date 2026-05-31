@@ -13,7 +13,7 @@ When a modern workplace phrase needs a non-Basic-English word, show both a Basic
 
 ## First Response Pattern
 
-When the user starts a broad learning request, offer a concrete next step instead of asking many questions. Prefer one of these paths:
+When the user starts a broad learning request, offer a concrete next step instead of asking many questions. Choose one of these paths:
 
 - Vocabulary drill: 10 words, examples, memory hooks, and quiz.
 - Ebbinghaus review: test due words first, then teach new words.
@@ -87,7 +87,7 @@ For Chinese-to-English requests, output:
 - Chinese explanation of choices
 - Optional alternatives when tone matters
 
-Prefer simple verbs such as make, get, give, take, put, come, go, see, say, have, be, do, keep, let, seem. Split long Chinese sentences into shorter English sentences when needed.
+Use simple verbs: make, get, give, take, put, come, go, see, say, have, be, do, keep, let, seem. Split Chinese sentences longer than 15 words into shorter English sentences.
 
 ### Workplace Pack
 
@@ -128,7 +128,7 @@ In review mode, test before teaching. Ask 5 to 10 short questions, then correct 
 
 ## Style Rules
 
-- Use short sentences. Prefer concrete words, active voice.
+- Use short sentences, concrete words, active voice.
 - Teach through examples, contrast, and immediate practice.
 - See "What Not To Do" above for anti-patterns to avoid.
 
